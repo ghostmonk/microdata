@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Person";
+}
+
+<h2>Person</h2>
+
+<div itemscope itemtype="http://data-vocabulary.org/Person">
+    <img src="@Url.Content( "~/Content/Images/nicholas-hillier.jpg" )" alt="Nicholas Hillier" itemprop="photo" />
+    <p>My name is 
+        <span itemprop="name">Nicholas Hillier</span> and I am known online as 
+        <span itemprop="nickname">Ghostmonk</span>. 
+    </p> 
+    <p>I live in 
+        <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="locality">Montreal</span>, 
+            <span itemprop="region">QC</span>
+        </span> 
+        and work as a 
+        <span itemprop="title">Programmer</span> at 
+        <span itemprop="affiliation">Triton Digital</span> in the position of 
+        <span itemprop="role">Technical-Lead</span>.
+    </p> 
+    <a href="https://www.ghostmonk.com" itemprop="url">www.ghostmonk.com</a>
+    <h2>People I know</h2>
+    <ul>
+        <li><span itemprop="friend">Myron Campbell</span></li>
+        <li><span itemprop="contact">Stephane Bourque</span></li>
+        <li><span itemprop="acquaintance">Dean Seguin</span></li>
+    </ul>
+</div>
